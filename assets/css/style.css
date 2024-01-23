@@ -87,6 +87,17 @@ body {
   line-height: 75px;
   text-align: center;
 }
+.navigation ul li a .container-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
 .navigation ul li a .icon ion-icon {
   font-size: 1.75rem;
 }
