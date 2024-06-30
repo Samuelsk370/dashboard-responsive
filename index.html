@@ -27,6 +27,7 @@
 
 <body>
     <!------------------- MENÚ LATERAL----------------- -->
+	
     <div class="container">
         <div class="navigation">
             <ul>
@@ -39,7 +40,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li data-target="inicio">
                     <a href="#" aria-label="logo Inicio">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
@@ -48,7 +49,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li data-target="clientes">
                     <a href="#" aria-label="Logo Clientes">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
@@ -57,7 +58,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li data-target="mensajes">
                     <a href="#" aria-label="Logo Mensajes">
                         <span class="icon">
                             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -66,7 +67,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li data-target="ayuda">
                     <a href="#" aria-label="Logo de Ayuda">
                         <span class="icon">
                             <ion-icon name="help-outline"></ion-icon>
@@ -75,7 +76,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li data-target="configuracion">
                     <a href="#" aria-label="Logo de Configuración">
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
@@ -86,7 +87,7 @@
 
               
 
-                <li>
+                <li data-target="salir">
                     <a href="#" aria-label="Logo de Salir">
                         <span class="icon">
                             <ion-icon name="log-out-outline"></ion-icon>
@@ -115,200 +116,280 @@
                 </div>
             </div>
 
-            <section class="cardBox">
-                <div class="card">
-                    <div>
-                        <div class="numbers">$10,666</div>
-                        <div class="cardName">Ganancias</div>
+<!--=================================== SECCION DE INICIO =========================================================-->
+            <div id="inicio" class="content" style="display:block;">
+                <!-- Contenido de INICIO -->
+                 <section class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">$10,999</div>
+                            <div class="cardName">Ganancias</div>
+                        </div>
+    
+                        <div class="iconBx">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </div>
                     </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="cash-outline"></ion-icon>
+    
+                    <div class="card">
+                        <div>
+                            <div class="numbers">20</div>
+                            <div class="cardName">Ventas</div>
+                        </div>
+    
+                        <div class="iconBx">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">20</div>
-                        <div class="cardName">Ventas</div>
+    
+                    <div class="card">
+                        <div>
+                            <div class="numbers">77</div>
+                            <div class="cardName">Comentarios</div>
+                        </div>
+    
+                        <div class="iconBx">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
                     </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="cart-outline"></ion-icon>
+    
+                    <div class="card">
+                        <div>
+                            <div class="numbers">7,222</div>
+                            <div class="cardName">Vista diaria</div>
+                        </div>
+    
+                        <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">77</div>
-                        <div class="cardName">Comentarios</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">7,222</div>
-                        <div class="cardName">Vista diaria</div>
-                    </div>
-
-                    <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                </div>
-                
-            </section>
-
-            <div class="details">
-                <section class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Eventos recientes</h2>
-                        <a href="#" class="btn">Ver todo</a>
-                    </div>
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Nombre</td>
-                                <td>Precio</td>
-                                <td>Pago</td>
-                                <td>Estado</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Refrigerador Star</td>
-                                <td>$10,200 MXN</td>
-                                <td>Pagado</td>
-                                <td><span class="status delivered">Entregado</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Laptop Dell</td>
-                                <td>$2,700  MXN</td>
-                                <td>Pendiente</td>
-                                <td><span class="status pending">Pendiente</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Reloj Apple</td>
-                                <td>$3,000 MXN</td>
-                                <td>Pagado</td>
-                                <td><span class="status return">Devolver</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Tenis Addidas</td>
-                                <td>$1,500 MXN</td>
-                                <td>Pendiente</td>
-                                <td><span class="status inProgress">En proceso</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Refrigerador Star</td>
-                                <td>$10,200 MXN</td>
-                                <td>Pagado</td>
-                                <td><span class="status delivered">Entregado</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Laptop Dell</td>
-                                <td>$2,700  MXN</td>
-                                <td>Pendiente</td>
-                                <td><span class="status pending">Pendiente</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Reloj Appleh</td>
-                                <td>$3,000 MXN</td>
-                                <td>Pagado</td>
-                                <td><span class="status return">Devolver</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Tenis Addidas</td>
-                                <td>$1,500 MXN</td>
-                                <td>Pendiente</td>
-                                <td><span class="status inProgress">En proceso</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    
                 </section>
+    
+                <div class="details">
+                    <section class="recentOrders">
+                        <div class="cardHeader">
+                            <h2>Eventos recientes</h2>
+                            <a href="#" class="btn">Ver todo</a>
+                        </div>
+    
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Precio</td>
+                                    <td>Pago</td>
+                                    <td>Estado</td>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td>Refrigerador Star</td>
+                                    <td>$10,200 MXN</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status delivered">Entregado</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Laptop Dell</td>
+                                    <td>$2,700  MXN</td>
+                                    <td>Pendiente</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Reloj Apple</td>
+                                    <td>$3,000 MXN</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status return">Devolver</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Tenis Addidas</td>
+                                    <td>$1,500 MXN</td>
+                                    <td>Pendiente</td>
+                                    <td><span class="status inProgress">En proceso</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Refrigerador Star</td>
+                                    <td>$10,200 MXN</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status delivered">Entregado</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Laptop Dell</td>
+                                    <td>$2,700  MXN</td>
+                                    <td>Pendiente</td>
+                                    <td><span class="status pending">Pendiente</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Reloj Appleh</td>
+                                    <td>$3,000 MXN</td>
+                                    <td>Pagado</td>
+                                    <td><span class="status return">Devolver</span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Tenis Addidas</td>
+                                    <td>$1,500 MXN</td>
+                                    <td>Pendiente</td>
+                                    <td><span class="status inProgress">En proceso</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+    
+                    <section class="recentCustomers">
+                        <div class="cardHeader">
+                            <h2> Clientes Recientes</h2>
+                        </div>
+    
+                        <table>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
+                                </td>
+                                <td>
+                                    <h4>David <br> <span>Ciudad de México</span></h4>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
+                                </td>
+                                <td>
+                                    <h4>Amit <br> <span>Guadalajara</span></h4>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
+                                </td>
+                                <td>
+                                    <h4>David <br> <span>Ciudad de México</span></h4>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
+                                </td>
+                                <td>
+                                    <h4>Amit <br> <span>Guadalajara</span></h4>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
+                                </td>
+                                <td>
+                                    <h4>David <br> <span>Ciudad de México</span></h4>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
+                                </td>
+                                <td>
+                                    <h4>Amit <br> <span>Guadalajara</span></h4>
+                                </td>
+                            </tr>
+    
+                          
+                        </table>
+                    </section>
+                </div>
+            </div>
 
-                <section class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2> Clientes Recientes</h2>
+<!--=================================== SECCION DE CLIENTES =========================================================-->
+            <div id="clientes" class="content" style="display:none;">
+                <!-- Contenido de CLIENTES -->
+                <section class="cardBox-clientes">
+                    <div class="card-clnts">
+                        <div class="iconUserProfile">
+                            <img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México">
+                        </div>
+                        <div class="userInfo">
+                            <h4>David Morales</h4>
+                        </div>
+                        <ion-icon name="add-circle-sharp"></ion-icon>
                     </div>
 
-                    <table>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
-                            </td>
-                            <td>
-                                <h4>David <br> <span>Ciudad de México</span></h4>
-                            </td>
-                        </tr>
+                    <div class="card-clnts">
+                        <div class="iconUserProfile">
+                            <img src="assets/imgs/user3.png" alt="Foto de David, Ciudad de Guadalajara">
+                        </div>
+                        <div class="userInfo">
+                            <h4>Amit Guadalupe M</h4>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
-                            </td>
-                            <td>
-                                <h4>Amit <br> <span>Guadalajara</span></h4>
-                            </td>
-                        </tr>
+                    <div class="card-clnts">
+                        <div class="iconUserProfile">
+                            <img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México">
+                        </div>
+                        <div class="userInfo">
+                            <h4>David Morales</h4>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
-                            </td>
-                            <td>
-                                <h4>David <br> <span>Ciudad de México</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
-                            </td>
-                            <td>
-                                <h4>Amit <br> <span>Guadalajara</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user2.jpg" alt="Foto de David, Ciudad de México"></div>
-                            </td>
-                            <td>
-                                <h4>David <br> <span>Ciudad de México</span></h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx"><img src="assets/imgs/user3.png" alt="Foto de Amit, Guadalajara"></div>
-                            </td>
-                            <td>
-                                <h4>Amit <br> <span>Guadalajara</span></h4>
-                            </td>
-                        </tr>
-
-                      
-                    </table>
+                    <div class="card-clnts">
+                        <div class="iconUserProfile">
+                            <img src="assets/imgs/user3.png" alt="Foto de Amit, Ciudad de Guadalajara">
+                        </div>
+                        <div class="userInfo">
+                            <h4>Amit Guadalupe M</h4>
+                        </div>
+                    </div>
                 </section>
             </div>
+            
+<!--=================================== SECCION DE MENSAJES =========================================================-->
+            <div id="mensajes" class="content" style="display:none;">
+                <!-- Contenido de MENSAJES -->
+                <section class="cardBox-clientes">
+                    
+                </section>
+            </div>
+
+<!--=================================== SECCION DE AYUDA =========================================================-->
+            <div id="ayuda" class="content" style="display:none;">
+                <!-- Contenido de INICIO -->
+                <section class="cardBox">
+                    <h2>hdbkhdbkd</h2>
+                </section>
+            </div>
+
+<!--=================================== SECCION DE CONFIG =========================================================-->
+            <div id="configuracion" class="content" style="display:none;">
+                <!-- Contenido de CLIENTES -->
+                <section class="cardBox">
+                    <h2>hdbkhdbkd</h2>
+                </section>
+            </div>
+
+<!--=================================== SECCION DE SALIR =========================================================-->
+            <div id="salir" class="content" style="display:none;">
+                <!-- Contenido de MENSAJES -->
+                <section class="cardBox">
+                    <h2>hdbkhdbkd</h2>
+                </section>
+            </div>
+            
         </div>
     </div>
 
     <script src="assets/js/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" integrity="sha384-xyz" crossorigin="anonymous"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" integrity="sha384-xyz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" crossorigin="anonymous"></script>
         
 </body>
 
