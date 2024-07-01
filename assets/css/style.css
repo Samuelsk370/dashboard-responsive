@@ -75,8 +75,9 @@ body {
   color: var(--white);
 }
 .navigation ul li:hover a,
-.navigation ul li.hovered a {
+.navigation ul li.hovered a{
   color: var(--blue);
+  font-weight: bolder;
 }
 
 .navigation ul li a .icon {
@@ -292,6 +293,32 @@ margin: auto 0;
 } */
 
 /* ======================= Cards ====================== */
+.cardBox-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  /* position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+   */
+}
+
+.cardBox-clientes .card{
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+}
+
 .card-clnts {
   display: flex;
   align-items: center;
@@ -300,6 +327,28 @@ margin: auto 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-bottom: 10px;
+  flex: 1 1 calc(50% - 20px); /* Ajusta el tamaño para que quepan dos en una fila */
+  justify-content: space-between;
+  position: relative;
+}
+.card-clnts:hover{
+  background-color: #2a2185;
+}
+
+.icons-clnts {
+  display: flex;
+  gap: 10px;
+}
+
+.icons-clnts ion-icon {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.cardBox-clientes .card-clnts:hover h4,
+.cardBox-clientes .card-clnts:hover ion-icon
+/* .cardBox-clientes .card-clnts .userInfo:hover .iconBx { */{
+  color: var(--white);
 }
 
 .cardBox {
@@ -349,28 +398,6 @@ margin: auto 0;
   color: var(--white);
 }
 
-
-
-.cardBox-clientes {
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 30px;
-  
-}
-.cardBox-clientes .card{
-  position: relative;
-  background: var(--white);
-  padding: 30px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: flex-start;
-  cursor: pointer;
-  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-
-}
 
 /* ================== Order Details List ============== */
 .details {
@@ -562,6 +589,10 @@ margin: auto 0;
   .user {
     min-width: 40px;
   }
+
+  .userInfo h4 {
+    font-size: 1rem;
+  } 
   .navigation {
     width: 100%;
     left: -100%;
