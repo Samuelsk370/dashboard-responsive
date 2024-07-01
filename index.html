@@ -11,6 +11,7 @@
     <title>Dashboard Responsivo</title>
     <link rel="icon" href="assets/imgs/favico.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chat-style.css">
 
     <!-- Datos estructurados para ayudar a los motores de búsqueda a entender mejor el contenido -->
     <script type="application/ld+json">
@@ -414,6 +415,34 @@
             <div id="mensajes" class="content" style="display:none;">
                 <!-- Contenido de MENSAJES -->
                 <section class="cardBox-clientes">
+                    <div class="chat-container">
+                        <div class="chat-main">
+                            <div class="chat-header">
+                                <img src="assets/imgs/user2.jpg" alt="Foto de usuario">
+                                <div class="chat-header-info">
+                                    <h5>Amit G.</h5>
+                                    <p>En línea</p>
+                                </div>
+                            </div>
+                            <div class="chat-messages">
+                                <!-- Mensajes de chat aquí -->
+                                <div class="message received">
+                                    <p>Hola, ¿cómo estás?</p>
+                                    <span class="time">10:00 AM</span>
+                                </div>
+                                <div class="message sent">
+                                    <p>¡Hola! Bien, ¿y tú?</p>
+                                    <span class="time">10:01 AM</span>
+                                </div>
+                                <!-- Más mensajes aquí -->
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Escribe un mensaje">
+                                <button><ion-icon name="send"></ion-icon></button>
+                            </div>
+                        </div>
+                    </div>
+                    
                     
                 </section>
             </div>
@@ -446,6 +475,7 @@
     </div>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/chat.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" crossorigin="anonymous"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" crossorigin="anonymous"></script>
         
